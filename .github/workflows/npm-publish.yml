@@ -185,7 +185,7 @@ jobs:
       fail-fast: false
       matrix:
         #tag: [ "@login", "@registration" ]
-        tag: [ "@smoke" ]
+        tag: [ "@Regresion" ]
     env:
       REPORT_DIR: ./target/site/serenity
     steps:
