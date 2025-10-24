@@ -212,15 +212,7 @@ jobs:
       - name: 🧪 Ejecutar pruebas con tag ${{ matrix.tag }}
         run: |
           echo "📂 Generando reportes en: $REPORT_DIR"
-          npx cucumber-js \
-            --require-module ts-node/register \
-            --require src/support/serenity.config.ts \
-            --require src/support/hooks.config.ts \
-            --require src/steps/**/*.ts \
-            src/features/**/*.feature \
-            --tags "${{ matrix.tag }}" \
-            --format @serenity-js/cucumber \
-            --format-options "{\"outputDirectory\": \"$REPORT_DIR\", \"specDirectory\": \"src/features\"}"
+          npx cucumber-js"
         continue-on-error: true
 
       - name: 🔍 Diagnóstico de carpetas generadas
