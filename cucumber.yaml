@@ -1,0 +1,12 @@
+default:
+  requireModule:
+    - ts-node/register
+  format:
+    - '@serenity-js/cucumber'
+  require:  
+    - ./src/steps/**/*.steps.ts
+    - ./src/support/**/*.ts
+  paths:
+    - src/features/**/*.feature
+  tags: "@registro_mascota"
+
