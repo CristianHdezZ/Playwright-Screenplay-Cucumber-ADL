@@ -1,4 +1,4 @@
-@Regresion
+
 Feature: registrarAsegurados
   Como usuario del módulo "Gestiona tus asegurados"
   Quiero registrar información de mis asegurados
@@ -9,12 +9,12 @@ Feature: registrarAsegurados
     When he loads the authentication token and goes to the homepage
     And el usuario está en el módulo " Gestiona tus asegurados "
     
-  @registro_familiar 
+  @registro_familiar @Regresion
   Scenario: Registrar un nuevo familiar
     And el usuario está en el sesion " Mi familia "
     And el usuario completa el formulario con los siguientes datos
       | primerNombre   | segundoNombre | primerApellido | segundoApellido | tipoDocumento | numeroDocumento | fechaNacimiento | genero  | parentesco | eps            | departamento   | ciudad        |
-      | Juan           | Carlos        | Pérez          | Gómez           | Cédula de ciudadanía | 145521455    | 1990-01-01     | Masculino |  Hijo(a)  | Aliansalud eps | Antioquia      | Medellín      |
+      | Juan           | Carlos        | Pérez          | Gómez           | Cédula de ciudadanía | 145521478    | 1990-01-01     | Masculino |  Hijo(a)  | Aliansalud eps | Antioquia      | Medellín      |
     And el usuario hace clic en Registrar
     Then el sistema debe mostrar un mensaje de éxito
 
