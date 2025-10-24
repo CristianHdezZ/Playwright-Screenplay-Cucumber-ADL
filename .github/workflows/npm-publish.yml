@@ -215,7 +215,7 @@ jobs:
           npx cucumber-js \
             --require-module ts-node/register \
             --require src/support/serenity.config.ts \
-            --require src/support/hooks.ts \
+            --require src/support/hooks.config.ts \
             --require src/steps/**/*.ts \
             src/features/**/*.feature \
             --tags "${{ matrix.tag }}" \

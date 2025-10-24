@@ -9,5 +9,5 @@
     "outDir": "./dist",
     "rootDir": "./"
   },
-  "include": ["src/**/*.ts", "src/support/serenity.config.ts"]
+  "include": ["src/**/*.ts"]
 }

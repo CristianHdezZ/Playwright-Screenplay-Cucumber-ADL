@@ -1,4 +1,4 @@
-@smoke
+@Regresion
 Feature: registrarAsegurados
   Como usuario del módulo "Gestiona tus asegurados"
   Quiero registrar información de mis asegurados

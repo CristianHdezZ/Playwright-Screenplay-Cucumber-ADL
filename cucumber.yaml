@@ -4,9 +4,9 @@ default:
   format:
     - '@serenity-js/cucumber'
   require:  
-    - ./src/steps/**/*.steps.ts
-    - ./src/support/**/*.ts
+    - ./src/**/*.steps.ts
+    - ./src/**/*.config.ts
   paths:
     - src/features/**/*.feature
-  tags: "@registro_mascota"
+  tags: "@Regresion"
 
