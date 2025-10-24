@@ -19,8 +19,8 @@ BeforeAll(async () => {
         console.log('✅ Se limpiaron los reportes de Serenity');
     }
 
-    const headless = process.env.HEADLESS === 'false';
-    
+    const headless = process.env.HEADLESS === 'true';
+
 
     // Lanzar Chrome real (no Chromium) una sola vez para todos los escenarios
     browser = await playwright.chromium.launch({
