@@ -20,6 +20,7 @@ BeforeAll(async () => {
     }
 
     const headless = process.env.HEADLESS === 'false';
+    
 
     // Lanzar Chrome real (no Chromium) una sola vez para todos los escenarios
     browser = await playwright.chromium.launch({
