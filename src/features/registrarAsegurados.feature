@@ -29,6 +29,7 @@ Feature: registrarAsegurados
     And el usuario carga los familiares desde el archivo "src/data/asegurados.xlsx"
 
 
+
   @registro_mascota @Regresion
   Scenario Outline: Registrar una nueva mascota
     And el usuario está en el sesion " Mis mascotas "
