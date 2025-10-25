@@ -5,6 +5,5 @@ dist/
 target/
 .serenity/
 coverage/
-.env
 .vscode/
 .idea/
