@@ -1,7 +1,7 @@
 
 Feature: registrarAsegurados
-  Como usuario del módulo "Gestiona tus asegurados"
-  Quiero registrar información de mis asegurados
+  Como usuario de la Consola de Colaborador de Seguros ADL
+  Quiero registrar información de mis asegurados en el módulo "Gestiona tus asegurados"
   Para mantener los datos actualizados y completos
 
   Background:
@@ -71,3 +71,35 @@ Feature: registrarAsegurados
     When el usuario registra todos los vehículos desde el archivo "src/data/asegurados.xlsx"
 
 
+  @registro_inmueble @Regresion
+  Scenario Outline: Registrar un nuevo inmueble
+    And el usuario está en el sesion " Mis inmuebles "  
+    And el usuario completa el formulario de inmueble con los siguientes datos
+      | direccion          | departamento | ciudad     | tipoInmueble | conjunto | yearConstruccion | pisos | nombreConjunto           | interior | torre | apartamento |
+      | <direccion>       | <departamento> | <ciudad>   | <tipoInmueble> | <conjunto> | <yearConstruccion> | <pisos> | <nombreConjunto>         | <interior> | <torre> | <apartamento> |
+    And el usuario hace clic en Registrar
+    Then el sistema debe mostrar un mensaje de éxito
+    Examples:
+      | direccion        | departamento | ciudad   | tipoInmueble | conjunto | yearConstruccion | pisos | nombreConjunto         | interior | torre | apartamento |
+      #| Carrera 45 #67-89 | Antioquia    | Medellín | Casa         | Abierto  | 10                | 2     | Villa Alegre           | N/A      | N/A   | N/A         |
+      | Calle 23 #45-67   | Antioquia    | Medellín | Apto         | Cerrado  | 3                 | 4     | Residencial Los Pinos  | 1        | 2     | 201         |
+
+  @registro_inmueble_excel @Regresion
+  Scenario: Registrar inmuebles desde Excel
+    And el usuario está en el sesion " Mis inmuebles "
+    When el usuario registra todos los inmuebles desde el archivo "src/data/asegurados.xlsx"
+
+
+@validacion_campos_numericos_inmueble
+Scenario Outline: Validar que los campos Interior, Torre y Apartamento solo acepten valores numéricos
+  Given el usuario está en el sesion " Mis inmuebles "
+  When el usuario intenta ingresar valores no numéricos en los campos del formulario de inmueble
+    | interior | torre | apartamento |
+    | <interior> | <torre> | <apartamento> |
+  Then el sistema no debe permitir ingresar letras en dichos campos
+
+  Examples:
+    | interior | torre | apartamento |
+    | A        | B     | C           |
+    | ABC      | 12B   | x3          |
+    | !@#      | $%^   | &*()        |
