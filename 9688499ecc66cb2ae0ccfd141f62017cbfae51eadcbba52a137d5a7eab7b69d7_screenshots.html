@@ -180,7 +180,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 25-10-2025 07:50</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 25-10-2025 20:06</span>
     <br style="clear:left"/>
 </div>
 
@@ -201,8 +201,8 @@
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
-                                Como usuario del módulo &quot;Gestiona tus asegurados&quot;<br />
-Quiero registrar información de mis asegurados<br />
+                                Como usuario de la Consola de Colaborador de Seguros ADL<br />
+Quiero registrar información de mis asegurados en el módulo &quot;Gestiona tus asegurados&quot;<br />
 Para mantener los datos actualizados y completos
                                 </div>
                             </div>
@@ -236,9 +236,9 @@ Para mantener los datos actualizados y completos
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Registrar un nuevo familiar
+                                <span class="error-color">Registrar un nuevo familiar
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -259,154 +259,77 @@ Para mantener los datos actualizados y completos
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Timeout error: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>TimeoutError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.PlaywrightPageElement.scrollIntoView()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/playwright/src/screenplay/models/PlaywrightPageElement.ts:53)<br />.async Scroll.performAs()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/web/src/screenplay/interactions/Scroll.ts:74)<br />.async PerformActivities.perform()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.async PerformActivities.perform()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.async World.<anonymous>()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/src/steps/RegistrarFamiliar.steps.ts:22)<br />.async wrapPromiseWithTimeout()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/time.ts:55)<br />.async Object.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/user_code_runner.ts:86)<br />.async Object.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/step_runner.ts:50)<br />.async TestCaseRunner.invokeStep()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:137)<br />.async TestCaseRunner.runStep()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:334)<br />.(async /home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:240)<br />.async TestCaseRunner.aroundTestStep()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:170)<br />.async TestCaseRunner.runAttempt()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:218)<br />.async TestCaseRunner.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:188)<br />.async Runtime.runTestCase()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/index.ts:89)<br />.async Runtime.start()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/index.ts:116)<br />.async runCucumber()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/api/run_cucumber.ts:125)<br />.async Cli.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/cli/index.ts:79)<br />.async Object.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/cli/run.ts:33)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
     <!-- Swiper Carousel -->
     <div class="swiper">
         <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-3b055dd112.png" title=" Registrar un nuevo familiar #1 - primerNombre: Mar&iacute;a, segundoNombre: Fernanda, primerApellido: L&oacute;pez, segundoApellido: Rodr&iacute;guez, tipoDocumento: C&eacute;dula de ciudadan&iacute;a, numeroDocumento: 178965400, fechaNacimiento: 1985-05-12, genero: Femenino, parentesco: C&oacute;nyuge, eps: Sura, departamento: Antioquia, ciudad: Medell&iacute;n" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-f2d7e7bfce.png" title=" Registrar un nuevo familiar #1 - primerNombre: Mar&iacute;a, segundoNombre: Fernanda, primerApellido: L&oacute;pez, segundoApellido: Rodr&iacute;guez, tipoDocumento: C&eacute;dula de ciudadan&iacute;a, numeroDocumento: 178965400, fechaNacimiento: 1985-05-12, genero: Femenino, parentesco: C&oacute;nyuge, eps: Sura, departamento: Antioquia, ciudad: Medell&iacute;n" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-3b055dd112.png" title=" Given Cristian opens the application" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-f2d7e7bfce.png" title=" Given Cristian opens the application" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-3b055dd112.png" title=" #open the application base URL" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-f2d7e7bfce.png" title=" #open the application base URL" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-3b055dd112.png" title=" Cristian navigates to &amp;quot;https://security-dev.migrupoesaval.com/security/unauthorized&amp;quot;" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-f2d7e7bfce.png" title=" Cristian navigates to &amp;quot;https://security-dev.migrupoesaval.com/security/unauthorized&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-6771a5ef71.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-6771a5ef71.png" title=" #load the authentication token and navigate to homepage" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #load the authentication token and navigate to homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-6771a5ef71.png" title=" #set localStorage tokens" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #set localStorage tokens" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-acbe36ce39.png" title=" #wait 5 seconds" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-443dba629f.png" title=" #wait 5 seconds" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-60f63efa65.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" #open the module /benefits/insured" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-60f63efa65.png" title=" #open the module /benefits/insured" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" Cristian waits for 8s" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-60f63efa65.png" title=" Cristian waits for 8s" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-8b94c83cf6.png" title=" Cristian scrolls to bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-until-bot-n-del-m-d-8b94c83cf6.png" title=" Cristian waits until bot&oacute;n del m&oacute;dulo /benefits/insured does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-del-m-dul-fc937dd35d.png" title=" Cristian clicks on bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-f589536292.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-887bb5306c.png" title=" And el usuario est&aacute; en el sesion &amp;quot; Mi familia &amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-887bb5306c.png" title=" #open the module  Mi familia " width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-887bb5306c.png" title=" Cristian clicks on bot&oacute;n de la sesion  Mi familia " width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-1b9d28e8f5.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-f-257d5240be.png" title=" And el usuario completa el formulario con los siguientes datos
-| primerNombre | segundoNombre | primerApellido | segundoApellido | tipoDocumento        | numeroDocumento | fechaNacimiento | genero   | parentesco | eps  | departamento | ciudad   |
-| Mar&iacute;a        | Fernanda      | L&oacute;pez          | Rodr&iacute;guez       | C&eacute;dula de ciudadan&iacute;a | 178965400       | 1985-05-12      | Femenino | C&oacute;nyuge    | Sura | Antioquia    | Medell&iacute;n |" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-f-257d5240be.png" title=" Cristian completa el formulario de un familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-f-257d5240be.png" title=" Cristian scrolls to bot&oacute;n A&ntilde;adir familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-a-adir-fa-f5821c29fc.png" title=" Cristian clicks on bot&oacute;n A&ntilde;adir familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-mar-a-into-campo-f6cbcc4f62.png" title=" Cristian enters &amp;quot;Mar&iacute;a&amp;quot; into campo Primer Nombre" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-fernanda-into-ca-99e36e9efa.png" title=" Cristian enters &amp;quot;Fernanda&amp;quot; into campo Segundo Nombre" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-l-pez-into-campo-1d94268363.png" title=" Cristian enters &amp;quot;L&oacute;pez&amp;quot; into campo Primer Apellido" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-rodr-guez-into-c-c28be7c9d0.png" title=" Cristian enters &amp;quot;Rodr&iacute;guez&amp;quot; into campo Segundo Apellido" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-178965400-into-c-f440911752.png" title=" Cristian enters &amp;quot;178965400&amp;quot; into campo N&uacute;mero de Documento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-1985-05-12-into-2178be844f.png" title=" Cristian enters &amp;quot;1985-05-12&amp;quot; into campo Fecha de Nacimiento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-1-from-se-81f8da7d6f.png" title=" Cristian selects value &amp;quot;1&amp;quot; from selector Tipo de Documento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-1-from-se-934a9c9558.png" title=" Cristian selects value &amp;quot;1&amp;quot; from selector G&eacute;nero" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-4-from-se-9d7126d3ec.png" title=" Cristian selects value &amp;quot;4&amp;quot; from selector Parentesco" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-15-from-s-942e41c875.png" title=" Cristian selects value &amp;quot;15&amp;quot; from selector EPS" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-05-from-s-ac2619bfc4.png" title=" Cristian selects value &amp;quot;05&amp;quot; from selector Departamento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-until-selector-ciud-ac2619bfc4.png" title=" Cristian waits until selector Ciudad does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-05001-fro-937c285d65.png" title=" Cristian selects value &amp;quot;05001&amp;quot; from selector Ciudad" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-b30757aa27.png" title=" And el usuario hace clic en Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-b30757aa27.png" title=" Cristian finaliza registro de un familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-b30757aa27.png" title=" Cristian clicks on bot&oacute;n Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-a534f6f97f.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-e60199a96d.png" title=" Then el sistema debe mostrar un mensaje de &eacute;xito" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-e60199a96d.png" title=" Cristian ensures that el mensaje de &eacute;xito de registro de familiar does equal true" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-e60199a96d.png" title=" Cristian scrolls to mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-e60199a96d.png" title=" Cristian ensures that mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot; does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-e60199a96d.png" title=" Cristian ensures that &amp;lt;&amp;lt;mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;&amp;gt;&amp;gt;.text() does equal &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-aceptar-e60199a96d.png" title=" Cristian scrolls to bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-aceptar-c891e29620.png" title=" Cristian clicks on bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-el-mensaje-d-8323ca464e.png" title=" Cristian ensures that el mensaje de &eacute;xito de registro de familiar does equal true (completed)" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-39be2130f2.png" title=" Cristian scrolls to bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
                 </div>
                 <div class="swiper-slide">
                     <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-e655ef8632.png" title=" Registrar un nuevo familiar #2 - primerNombre: Luis, segundoNombre: Alberto, primerApellido: Mart&iacute;nez, segundoApellido: S&aacute;nchez, tipoDocumento: C&eacute;dula de ciudadan&iacute;a, numeroDocumento: 123456700, fechaNacimiento: 2000-09-30, genero: Masculino, parentesco: Hijo(a), eps: Mutual, departamento: Antioquia, ciudad: Medell&iacute;n" width="0" />
@@ -421,138 +344,28 @@ Para mantener los datos actualizados y completos
                     <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-e655ef8632.png" title=" Cristian navigates to &amp;quot;https://security-dev.migrupoesaval.com/security/unauthorized&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-5490b8961f.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-5490b8961f.png" title=" #load the authentication token and navigate to homepage" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #load the authentication token and navigate to homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-5490b8961f.png" title=" #set localStorage tokens" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #set localStorage tokens" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-f9a78eca10.png" title=" #wait 5 seconds" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-6eb7d53bde.png" title=" #wait 5 seconds" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-599857e020.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" #open the module /benefits/insured" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-599857e020.png" title=" #open the module /benefits/insured" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" Cristian waits for 8s" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-599857e020.png" title=" Cristian waits for 8s" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-8b94c83cf6.png" title=" Cristian scrolls to bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-until-bot-n-del-m-d-8b94c83cf6.png" title=" Cristian waits until bot&oacute;n del m&oacute;dulo /benefits/insured does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-del-m-dul-04931a60cf.png" title=" Cristian clicks on bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-f589536292.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-887bb5306c.png" title=" And el usuario est&aacute; en el sesion &amp;quot; Mi familia &amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-887bb5306c.png" title=" #open the module  Mi familia " width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-887bb5306c.png" title=" Cristian clicks on bot&oacute;n de la sesion  Mi familia " width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-1b9d28e8f5.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-f-2c4deef567.png" title=" And el usuario completa el formulario con los siguientes datos
-| primerNombre | segundoNombre | primerApellido | segundoApellido | tipoDocumento        | numeroDocumento | fechaNacimiento | genero    | parentesco | eps    | departamento | ciudad   |
-| Luis         | Alberto       | Mart&iacute;nez       | S&aacute;nchez         | C&eacute;dula de ciudadan&iacute;a | 123456700       | 2000-09-30      | Masculino | Hijo(a)    | Mutual | Antioquia    | Medell&iacute;n |" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-f-2c4deef567.png" title=" Cristian completa el formulario de un familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-f-2c4deef567.png" title=" Cristian scrolls to bot&oacute;n A&ntilde;adir familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-a-adir-fa-e19d28ada3.png" title=" Cristian clicks on bot&oacute;n A&ntilde;adir familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-luis-into-campo-71598ea823.png" title=" Cristian enters &amp;quot;Luis&amp;quot; into campo Primer Nombre" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-alberto-into-cam-140ac243ef.png" title=" Cristian enters &amp;quot;Alberto&amp;quot; into campo Segundo Nombre" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-mart-nez-into-ca-63cf45e868.png" title=" Cristian enters &amp;quot;Mart&iacute;nez&amp;quot; into campo Primer Apellido" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-s-nchez-into-cam-4d9cbb812a.png" title=" Cristian enters &amp;quot;S&aacute;nchez&amp;quot; into campo Segundo Apellido" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-123456700-into-c-c604aa20e7.png" title=" Cristian enters &amp;quot;123456700&amp;quot; into campo N&uacute;mero de Documento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-2000-09-30-into-b39854271e.png" title=" Cristian enters &amp;quot;2000-09-30&amp;quot; into campo Fecha de Nacimiento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-1-from-se-b044023feb.png" title=" Cristian selects value &amp;quot;1&amp;quot; from selector Tipo de Documento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-2-from-se-a6bf2a0f45.png" title=" Cristian selects value &amp;quot;2&amp;quot; from selector G&eacute;nero" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-9-from-se-f228400234.png" title=" Cristian selects value &amp;quot;9&amp;quot; from selector Parentesco" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-8-from-se-4b1cb36b34.png" title=" Cristian selects value &amp;quot;8&amp;quot; from selector EPS" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-05-from-s-367068c431.png" title=" Cristian selects value &amp;quot;05&amp;quot; from selector Departamento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-until-selector-ciud-367068c431.png" title=" Cristian waits until selector Ciudad does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-05001-fro-26bbba7b52.png" title=" Cristian selects value &amp;quot;05001&amp;quot; from selector Ciudad" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-7fff1bc49f.png" title=" And el usuario hace clic en Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-7fff1bc49f.png" title=" Cristian finaliza registro de un familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-7fff1bc49f.png" title=" Cristian clicks on bot&oacute;n Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-a534f6f97f.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-e60199a96d.png" title=" Then el sistema debe mostrar un mensaje de &eacute;xito" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-e60199a96d.png" title=" Cristian ensures that el mensaje de &eacute;xito de registro de familiar does equal true" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-e60199a96d.png" title=" Cristian scrolls to mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-e60199a96d.png" title=" Cristian ensures that mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot; does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-072df561e8.png" title=" Cristian ensures that &amp;lt;&amp;lt;mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;&amp;gt;&amp;gt;.text() does equal &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-aceptar-072df561e8.png" title=" Cristian scrolls to bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-aceptar-b8a3aad55f.png" title=" Cristian clicks on bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-el-mensaje-d-514da9e495.png" title=" Cristian ensures that el mensaje de éxito de registro de familiar does equal true (completed): <span class='success-color'>SUCCESS</span>" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-7da595cbfc.png" title=" Cristian scrolls to botón del módulo /benefits/insured: <span class='error-color'>ERROR</span>" width="0" />
                 </div>
         </div>
         <div class="swiper-button-prev"></div>

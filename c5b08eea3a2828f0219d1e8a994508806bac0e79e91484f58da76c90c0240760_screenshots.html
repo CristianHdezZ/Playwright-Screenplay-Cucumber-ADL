@@ -180,7 +180,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 25-10-2025 07:54</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 25-10-2025 20:10</span>
     <br style="clear:left"/>
 </div>
 
@@ -201,8 +201,8 @@
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
-                                Como usuario del módulo &quot;Gestiona tus asegurados&quot;<br />
-Quiero registrar información de mis asegurados<br />
+                                Como usuario de la Consola de Colaborador de Seguros ADL<br />
+Quiero registrar información de mis asegurados en el módulo &quot;Gestiona tus asegurados&quot;<br />
 Para mantener los datos actualizados y completos
                                 </div>
                             </div>
@@ -236,9 +236,9 @@ Para mantener los datos actualizados y completos
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Registrar un nuevo veh&iacute;culo
+                                <span class="error-color">Registrar un nuevo veh&iacute;culo
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -259,273 +259,113 @@ Para mantener los datos actualizados y completos
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Timeout error: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>TimeoutError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.PlaywrightPageElement.scrollIntoView()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/playwright/src/screenplay/models/PlaywrightPageElement.ts:53)<br />.async Scroll.performAs()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/web/src/screenplay/interactions/Scroll.ts:74)<br />.async PerformActivities.perform()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.async PerformActivities.perform()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.async World.<anonymous>()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/src/steps/RegistrarFamiliar.steps.ts:22)<br />.async wrapPromiseWithTimeout()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/time.ts:55)<br />.async Object.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/user_code_runner.ts:86)<br />.async Object.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/step_runner.ts:50)<br />.async TestCaseRunner.invokeStep()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:137)<br />.async TestCaseRunner.runStep()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:334)<br />.(async /home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:240)<br />.async TestCaseRunner.aroundTestStep()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:170)<br />.async TestCaseRunner.runAttempt()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:218)<br />.async TestCaseRunner.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:188)<br />.async Runtime.runTestCase()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/index.ts:89)<br />.async Runtime.start()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/index.ts:116)<br />.async runCucumber()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/api/run_cucumber.ts:125)<br />.async Cli.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/cli/index.ts:79)<br />.async Object.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/cli/run.ts:33)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
     <!-- Swiper Carousel -->
     <div class="swiper">
         <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-350dc4372e.png" title=" Registrar un nuevo veh&iacute;culo #1 - placa: OPU896, modelo: 2025, propietario: DAVID ALVAREZ, tipoVehiculo: Autom&oacute;vil, marca: TOYOTA, esPropietario: S&iacute;, departamento: Antioquia, ciudad: Medell&iacute;n, tipoServicio: Particular" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-a2246e01f9.png" title=" Registrar un nuevo veh&iacute;culo #1 - placa: OPU896, modelo: 2025, propietario: DAVID ALVAREZ, tipoVehiculo: Autom&oacute;vil, marca: TOYOTA, esPropietario: S&iacute;, departamento: Antioquia, ciudad: Medell&iacute;n, tipoServicio: Particular" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-350dc4372e.png" title=" Given Cristian opens the application" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-a2246e01f9.png" title=" Given Cristian opens the application" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-350dc4372e.png" title=" #open the application base URL" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-a2246e01f9.png" title=" #open the application base URL" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-350dc4372e.png" title=" Cristian navigates to &amp;quot;https://security-dev.migrupoesaval.com/security/unauthorized&amp;quot;" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-a2246e01f9.png" title=" Cristian navigates to &amp;quot;https://security-dev.migrupoesaval.com/security/unauthorized&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-7cdbc2f902.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-7cdbc2f902.png" title=" #load the authentication token and navigate to homepage" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #load the authentication token and navigate to homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-7cdbc2f902.png" title=" #set localStorage tokens" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #set localStorage tokens" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-acbe36ce39.png" title=" #wait 5 seconds" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-6eb7d53bde.png" title=" #wait 5 seconds" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-198fc4e204.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" #open the module /benefits/insured" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-198fc4e204.png" title=" #open the module /benefits/insured" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" Cristian waits for 8s" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-198fc4e204.png" title=" Cristian waits for 8s" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-8b94c83cf6.png" title=" Cristian scrolls to bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-db8e41092b.png" title=" Cristian scrolls to bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-until-bot-n-del-m-d-8b94c83cf6.png" title=" Cristian waits until bot&oacute;n del m&oacute;dulo /benefits/insured does become visible" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-e655ef8632.png" title=" Registrar un nuevo veh&iacute;culo #2 - placa: ABX986, modelo: 2020, propietario: DAVID ALVAREZ, tipoVehiculo: Autom&oacute;vil, marca: TOYOTA, esPropietario: No, departamento: Antioquia, ciudad: Medell&iacute;n, tipoServicio: Particular" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-del-m-dul-04931a60cf.png" title=" Cristian clicks on bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-e655ef8632.png" title=" Given Cristian opens the application" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-f589536292.png" title=" #wait 5 seconds" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-e655ef8632.png" title=" #open the application base URL" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-711b3df75b.png" title=" And el usuario est&aacute; en el sesion &amp;quot; Mis veh&iacute;culos &amp;quot;" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-e655ef8632.png" title=" Cristian navigates to &amp;quot;https://security-dev.migrupoesaval.com/security/unauthorized&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-711b3df75b.png" title=" #open the module  Mis veh&iacute;culos " width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-711b3df75b.png" title=" Cristian clicks on bot&oacute;n de la sesion  Mis veh&iacute;culos " width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #load the authentication token and navigate to homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-54112a830f.png" title=" #wait 5 seconds" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #set localStorage tokens" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-v-e429b6ae1c.png" title=" And el usuario completa el formulario de veh&iacute;culo con los siguientes datos
-| placa  | modelo | propietario   | tipoVehiculo | marca  | esPropietario | departamento | ciudad   | tipoServicio |
-| OPU896 | 2025   | DAVID ALVAREZ | Autom&oacute;vil    | TOYOTA | S&iacute;            | Antioquia    | Medell&iacute;n | Particular   |" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-b3d5a9533e.png" title=" #wait 5 seconds" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-v-e429b6ae1c.png" title=" Cristian completa el formulario de registro de veh&iacute;culo" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-60f63efa65.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-v-e429b6ae1c.png" title=" Cristian scrolls to bot&oacute;n A&ntilde;adir veh&iacute;culo" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-60f63efa65.png" title=" #open the module /benefits/insured" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-a-adir-ve-50004a6b3b.png" title=" Cristian clicks on bot&oacute;n A&ntilde;adir veh&iacute;culo" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-60f63efa65.png" title=" Cristian waits for 8s" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-radio-s-de-pro-82af072b3f.png" title=" Cristian clicks on radio S&iacute; de propietario del veh&iacute;culo" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-opu896-into-camp-3b379984a8.png" title=" Cristian enters &amp;quot;OPU896&amp;quot; into campo Placa" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-2025-into-campo-8603adf6f2.png" title=" Cristian enters &amp;quot;2025&amp;quot; into campo Modelo" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-autom-vil-from-4a5482850e.png" title=" Cristian selects &amp;quot;Autom&oacute;vil&amp;quot; from selector Tipo de veh&iacute;culo" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-toyota-from-sel-52b4d3cf4a.png" title=" Cristian selects &amp;quot;TOYOTA&amp;quot; from selector Marca" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-antioquia-from-aaea8811d9.png" title=" Cristian selects &amp;quot;Antioquia&amp;quot; from select Departamento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-medell-n-from-s-a3e7dc9cf3.png" title=" Cristian selects &amp;quot;Medell&iacute;n&amp;quot; from select Ciudad" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-particular-from-bad6cdbeca.png" title=" Cristian selects &amp;quot;Particular&amp;quot; from select Tipo de servicio" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-31434393ea.png" title=" And el usuario hace clic en Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-31434393ea.png" title=" Cristian finaliza registro de un familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-31434393ea.png" title=" Cristian clicks on bot&oacute;n Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-9019223a20.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-9019223a20.png" title=" Then el sistema debe mostrar un mensaje de &eacute;xito" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-9019223a20.png" title=" Cristian ensures that el mensaje de &eacute;xito de registro de familiar does equal true" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-9019223a20.png" title=" Cristian scrolls to mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-9019223a20.png" title=" Cristian ensures that mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot; does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-9019223a20.png" title=" Cristian ensures that &amp;lt;&amp;lt;mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;&amp;gt;&amp;gt;.text() does equal &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-aceptar-9019223a20.png" title=" Cristian scrolls to bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-aceptar-fd1f5d9466.png" title=" Cristian clicks on bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-el-mensaje-d-93596a48df.png" title=" Cristian ensures that el mensaje de &eacute;xito de registro de familiar does equal true (completed)" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-3870962d04.png" title=" Registrar un nuevo veh&iacute;culo #2 - placa: ABX986, modelo: 2020, propietario: DAVID ALVAREZ, tipoVehiculo: Autom&oacute;vil, marca: TOYOTA, esPropietario: No, departamento: Antioquia, ciudad: Medell&iacute;n, tipoServicio: Particular" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-3870962d04.png" title=" Given Cristian opens the application" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-3870962d04.png" title=" #open the application base URL" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-3870962d04.png" title=" Cristian navigates to &amp;quot;https://security-dev.migrupoesaval.com/security/unauthorized&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-5490b8961f.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-5490b8961f.png" title=" #load the authentication token and navigate to homepage" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-5490b8961f.png" title=" #set localStorage tokens" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-d9361aafba.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" #open the module /benefits/insured" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" Cristian waits for 8s" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-8b94c83cf6.png" title=" Cristian scrolls to bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-until-bot-n-del-m-d-8b94c83cf6.png" title=" Cristian waits until bot&oacute;n del m&oacute;dulo /benefits/insured does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-del-m-dul-d5fc4429c8.png" title=" Cristian clicks on bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-f589536292.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-c54f8cb98c.png" title=" And el usuario est&aacute; en el sesion &amp;quot; Mis veh&iacute;culos &amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-c54f8cb98c.png" title=" #open the module  Mis veh&iacute;culos " width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-c54f8cb98c.png" title=" Cristian clicks on bot&oacute;n de la sesion  Mis veh&iacute;culos " width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-54112a830f.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-v-0ea6f04637.png" title=" And el usuario completa el formulario de veh&iacute;culo con los siguientes datos
-| placa  | modelo | propietario   | tipoVehiculo | marca  | esPropietario | departamento | ciudad   | tipoServicio |
-| ABX986 | 2020   | DAVID ALVAREZ | Autom&oacute;vil    | TOYOTA | No            | Antioquia    | Medell&iacute;n | Particular   |" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-v-0ea6f04637.png" title=" Cristian completa el formulario de registro de veh&iacute;culo" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-v-0ea6f04637.png" title=" Cristian scrolls to bot&oacute;n A&ntilde;adir veh&iacute;culo" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-a-adir-ve-28aef9f909.png" title=" Cristian clicks on bot&oacute;n A&ntilde;adir veh&iacute;culo" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-radio-no-de-pro-56eb50af34.png" title=" Cristian clicks on radio No de propietario del veh&iacute;culo" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-david-alvarez-f-76b4c0b02b.png" title=" Cristian selects &amp;quot;DAVID ALVAREZ&amp;quot; from selector Propietario" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-abx986-into-camp-1d532222e9.png" title=" Cristian enters &amp;quot;ABX986&amp;quot; into campo Placa" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-2020-into-campo-fc7e8a82e2.png" title=" Cristian enters &amp;quot;2020&amp;quot; into campo Modelo" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-autom-vil-from-e2bf22329c.png" title=" Cristian selects &amp;quot;Autom&oacute;vil&amp;quot; from selector Tipo de veh&iacute;culo" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-toyota-from-sel-a96999656e.png" title=" Cristian selects &amp;quot;TOYOTA&amp;quot; from selector Marca" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-antioquia-from-ad98653a0b.png" title=" Cristian selects &amp;quot;Antioquia&amp;quot; from select Departamento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-medell-n-from-s-b53a7b0dc3.png" title=" Cristian selects &amp;quot;Medell&iacute;n&amp;quot; from select Ciudad" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-particular-from-894a0edf1a.png" title=" Cristian selects &amp;quot;Particular&amp;quot; from select Tipo de servicio" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-d6e024f069.png" title=" And el usuario hace clic en Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-d6e024f069.png" title=" Cristian finaliza registro de un familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-d6e024f069.png" title=" Cristian clicks on bot&oacute;n Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-4ee6d4ddf8.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-4ee6d4ddf8.png" title=" Then el sistema debe mostrar un mensaje de &eacute;xito" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-4ee6d4ddf8.png" title=" Cristian ensures that el mensaje de &eacute;xito de registro de familiar does equal true" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-4ee6d4ddf8.png" title=" Cristian scrolls to mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-4ee6d4ddf8.png" title=" Cristian ensures that mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot; does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-4ee6d4ddf8.png" title=" Cristian ensures that &amp;lt;&amp;lt;mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;&amp;gt;&amp;gt;.text() does equal &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-aceptar-4ee6d4ddf8.png" title=" Cristian scrolls to bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-aceptar-bf0e501859.png" title=" Cristian clicks on bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-el-mensaje-d-7e4c89cb71.png" title=" Cristian ensures that el mensaje de éxito de registro de familiar does equal true (completed): <span class='success-color'>SUCCESS</span>" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-39be2130f2.png" title=" Cristian scrolls to botón del módulo /benefits/insured: <span class='error-color'>ERROR</span>" width="0" />
                 </div>
         </div>
         <div class="swiper-button-prev"></div>

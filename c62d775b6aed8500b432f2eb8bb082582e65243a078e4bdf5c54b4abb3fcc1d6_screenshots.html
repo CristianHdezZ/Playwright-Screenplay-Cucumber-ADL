@@ -180,7 +180,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 25-10-2025 07:52</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 25-10-2025 20:08</span>
     <br style="clear:left"/>
 </div>
 
@@ -201,8 +201,8 @@
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
-                                Como usuario del módulo &quot;Gestiona tus asegurados&quot;<br />
-Quiero registrar información de mis asegurados<br />
+                                Como usuario de la Consola de Colaborador de Seguros ADL<br />
+Quiero registrar información de mis asegurados en el módulo &quot;Gestiona tus asegurados&quot;<br />
 Para mantener los datos actualizados y completos
                                 </div>
                             </div>
@@ -236,9 +236,9 @@ Para mantener los datos actualizados y completos
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Registrar una nueva mascota
+                                <span class="error-color">Registrar una nueva mascota
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -259,252 +259,113 @@ Para mantener los datos actualizados y completos
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Timeout error: locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>TimeoutError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.PlaywrightPageElement.scrollIntoView()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/playwright/src/screenplay/models/PlaywrightPageElement.ts:53)<br />.async Scroll.performAs()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/web/src/screenplay/interactions/Scroll.ts:74)<br />.async PerformActivities.perform()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.async PerformActivities.perform()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.async World.<anonymous>()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/src/steps/RegistrarFamiliar.steps.ts:22)<br />.async wrapPromiseWithTimeout()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/time.ts:55)<br />.async Object.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/user_code_runner.ts:86)<br />.async Object.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/step_runner.ts:50)<br />.async TestCaseRunner.invokeStep()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:137)<br />.async TestCaseRunner.runStep()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:334)<br />.(async /home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:240)<br />.async TestCaseRunner.aroundTestStep()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:170)<br />.async TestCaseRunner.runAttempt()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:218)<br />.async TestCaseRunner.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/test_case_runner.ts:188)<br />.async Runtime.runTestCase()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/index.ts:89)<br />.async Runtime.start()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/runtime/index.ts:116)<br />.async runCucumber()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/api/run_cucumber.ts:125)<br />.async Cli.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/cli/index.ts:79)<br />.async Object.run()(/home/runner/work/Playwright-Screenplay-Cucumber-ADL/Playwright-Screenplay-Cucumber-ADL/node_modules/@cucumber/cucumber/src/cli/run.ts:33)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
     <!-- Swiper Carousel -->
     <div class="swiper">
         <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-06f3c362df.png" title=" Registrar una nueva mascota #1 - nombreMascota: Max, tipoMascota: Gato, fechaNacimiento: 2020-03-15, raza: Siam&eacute;s, genero: Macho" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-e655ef8632.png" title=" Registrar una nueva mascota #1 - nombreMascota: Max, tipoMascota: Gato, fechaNacimiento: 2020-03-15, raza: Siam&eacute;s, genero: Macho" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-06f3c362df.png" title=" Given Cristian opens the application" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-e655ef8632.png" title=" Given Cristian opens the application" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-06f3c362df.png" title=" #open the application base URL" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-e655ef8632.png" title=" #open the application base URL" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-06f3c362df.png" title=" Cristian navigates to &amp;quot;https://security-dev.migrupoesaval.com/security/unauthorized&amp;quot;" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-e655ef8632.png" title=" Cristian navigates to &amp;quot;https://security-dev.migrupoesaval.com/security/unauthorized&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-5490b8961f.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-5490b8961f.png" title=" #load the authentication token and navigate to homepage" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #load the authentication token and navigate to homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-5490b8961f.png" title=" #set localStorage tokens" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #set localStorage tokens" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-acbe36ce39.png" title=" #wait 5 seconds" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-b3d5a9533e.png" title=" #wait 5 seconds" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-91c043c547.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" #open the module /benefits/insured" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-91c043c547.png" title=" #open the module /benefits/insured" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" Cristian waits for 8s" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-91c043c547.png" title=" Cristian waits for 8s" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-8b94c83cf6.png" title=" Cristian scrolls to bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-8f9ca76674.png" title=" Cristian scrolls to bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-until-bot-n-del-m-d-8b94c83cf6.png" title=" Cristian waits until bot&oacute;n del m&oacute;dulo /benefits/insured does become visible" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-b9f3a823f1.png" title=" Registrar una nueva mascota #2 - nombreMascota: Bella, tipoMascota: Perro, fechaNacimiento: 2019-11-20, raza: Bulldog Franc&eacute;s, genero: Hembra" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-del-m-dul-d5fc4429c8.png" title=" Cristian clicks on bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-b9f3a823f1.png" title=" Given Cristian opens the application" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-f589536292.png" title=" #wait 5 seconds" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-b9f3a823f1.png" title=" #open the application base URL" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-b75bc57d90.png" title=" And el usuario est&aacute; en el sesion &amp;quot; Mis mascotas &amp;quot;" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-b9f3a823f1.png" title=" Cristian navigates to &amp;quot;https://security-dev.migrupoesaval.com/security/unauthorized&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-b75bc57d90.png" title=" #open the module  Mis mascotas " width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-b75bc57d90.png" title=" Cristian clicks on bot&oacute;n de la sesion  Mis mascotas " width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #load the authentication token and navigate to homepage" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-c76508e9ef.png" title=" #wait 5 seconds" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-21850b5bb0.png" title=" #set localStorage tokens" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-m-af56916af5.png" title=" And el usuario completa el formulario de mascota con los siguientes datos
-| nombreMascota | tipoMascota | fechaNacimiento | raza   | genero |
-| Max           | Gato        | 2020-03-15      | Siam&eacute;s | Macho  |" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-b3d5a9533e.png" title=" #wait 5 seconds" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-m-af56916af5.png" title=" Cristian completa el formulario de una mascota" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-91c043c547.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-m-af56916af5.png" title=" Cristian scrolls to bot&oacute;n A&ntilde;adir mascota" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-91c043c547.png" title=" #open the module /benefits/insured" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-a-adir-ma-84d9aac7bf.png" title=" Cristian clicks on bot&oacute;n A&ntilde;adir mascota" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-91c043c547.png" title=" Cristian waits for 8s" width="0" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-max-into-campo-n-60e895722d.png" title=" Cristian enters &amp;quot;Max&amp;quot; into campo Nombre mascota" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-1-from-se-8132191d5a.png" title=" Cristian selects value &amp;quot;1&amp;quot; from selector Tipo de mascota" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-50-from-s-1662d95891.png" title=" Cristian selects value &amp;quot;50&amp;quot; from selector Raza" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-2020-03-15-into-ecb7055551.png" title=" Cristian enters &amp;quot;2020-03-15&amp;quot; into campo Fecha de Nacimiento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-2-from-se-33da3674f4.png" title=" Cristian selects value &amp;quot;2&amp;quot; from selector G&eacute;nero" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-2aa7bd5627.png" title=" And el usuario hace clic en Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-2aa7bd5627.png" title=" Cristian finaliza registro de un familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-2aa7bd5627.png" title=" Cristian clicks on bot&oacute;n Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-079258962e.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-079258962e.png" title=" Then el sistema debe mostrar un mensaje de &eacute;xito" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-079258962e.png" title=" Cristian ensures that el mensaje de &eacute;xito de registro de familiar does equal true" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-079258962e.png" title=" Cristian scrolls to mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-079258962e.png" title=" Cristian ensures that mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot; does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-079258962e.png" title=" Cristian ensures that &amp;lt;&amp;lt;mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;&amp;gt;&amp;gt;.text() does equal &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-aceptar-079258962e.png" title=" Cristian scrolls to bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-aceptar-2547b86503.png" title=" Cristian clicks on bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-el-mensaje-d-55765c8399.png" title=" Cristian ensures that el mensaje de &eacute;xito de registro de familiar does equal true (completed)" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-ba315be5a9.png" title=" Registrar una nueva mascota #2 - nombreMascota: Bella, tipoMascota: Perro, fechaNacimiento: 2019-11-20, raza: Bulldog Franc&eacute;s, genero: Hembra" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-ba315be5a9.png" title=" Given Cristian opens the application" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-ba315be5a9.png" title=" #open the application base URL" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-navigates-to-https-sec-ba315be5a9.png" title=" Cristian navigates to &amp;quot;https://security-dev.migrupoesaval.com/security/unauthorized&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-7cdbc2f902.png" title=" When he loads the authentication token and goes to the homepage" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-7cdbc2f902.png" title=" #load the authentication token and navigate to homepage" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-set-localstorage-tokens-7cdbc2f902.png" title=" #set localStorage tokens" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-acbe36ce39.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" And el usuario est&aacute; en el m&oacute;dulo &amp;quot;/benefits/insured&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" #open the module /benefits/insured" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-for-8s-8b94c83cf6.png" title=" Cristian waits for 8s" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-8b94c83cf6.png" title=" Cristian scrolls to bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-waits-until-bot-n-del-m-d-8b94c83cf6.png" title=" Cristian waits until bot&oacute;n del m&oacute;dulo /benefits/insured does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-del-m-dul-d5fc4429c8.png" title=" Cristian clicks on bot&oacute;n del m&oacute;dulo /benefits/insured" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-f589536292.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-261afca3d0.png" title=" And el usuario est&aacute; en el sesion &amp;quot; Mis mascotas &amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-261afca3d0.png" title=" #open the module  Mis mascotas " width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-de-la-ses-261afca3d0.png" title=" Cristian clicks on bot&oacute;n de la sesion  Mis mascotas " width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-c76508e9ef.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-m-0b2c2bcd19.png" title=" And el usuario completa el formulario de mascota con los siguientes datos
-| nombreMascota | tipoMascota | fechaNacimiento | raza            | genero |
-| Bella         | Perro       | 2019-11-20      | Bulldog Franc&eacute;s | Hembra |" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-m-0b2c2bcd19.png" title=" Cristian completa el formulario de una mascota" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-a-adir-m-0b2c2bcd19.png" title=" Cristian scrolls to bot&oacute;n A&ntilde;adir mascota" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-a-adir-ma-079bb3f7ef.png" title=" Cristian clicks on bot&oacute;n A&ntilde;adir mascota" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-bella-into-campo-8cebe0da27.png" title=" Cristian enters &amp;quot;Bella&amp;quot; into campo Nombre mascota" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-2-from-se-7a91ed6f99.png" title=" Cristian selects value &amp;quot;2&amp;quot; from selector Tipo de mascota" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-13-from-s-0b42362916.png" title=" Cristian selects value &amp;quot;13&amp;quot; from selector Raza" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-enters-2019-11-20-into-916bb27db9.png" title=" Cristian enters &amp;quot;2019-11-20&amp;quot; into campo Fecha de Nacimiento" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-selects-value-1-from-se-e2a99f6596.png" title=" Cristian selects value &amp;quot;1&amp;quot; from selector G&eacute;nero" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-dacedeb760.png" title=" And el usuario hace clic en Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-dacedeb760.png" title=" Cristian finaliza registro de un familiar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-registrar-dacedeb760.png" title=" Cristian clicks on bot&oacute;n Registrar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-wait-5-seconds-079258962e.png" title=" #wait 5 seconds" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-079258962e.png" title=" Then el sistema debe mostrar un mensaje de &eacute;xito" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-079258962e.png" title=" Cristian ensures that el mensaje de &eacute;xito de registro de familiar does equal true" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-mensaje-de-xi-079258962e.png" title=" Cristian scrolls to mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-079258962e.png" title=" Cristian ensures that mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot; does become visible" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-mensaje-de-079258962e.png" title=" Cristian ensures that &amp;lt;&amp;lt;mensaje de &eacute;xito &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;&amp;gt;&amp;gt;.text() does equal &amp;quot;&iexcl;Los datos fueron guardados con &eacute;xito!&amp;quot;" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-aceptar-079258962e.png" title=" Cristian scrolls to bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-clicks-on-bot-n-aceptar-2547b86503.png" title=" Cristian clicks on bot&oacute;n Aceptar" width="0" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="photo-linux-chromium-140.0.7339.207-cristian-ensures-that-el-mensaje-d-d42be72a29.png" title=" Cristian ensures that el mensaje de éxito de registro de familiar does equal true (completed): <span class='success-color'>SUCCESS</span>" width="0" />
+                    <img src="photo-linux-chromium-140.0.7339.207-cristian-scrolls-to-bot-n-del-m-du-8f9ca76674.png" title=" Cristian scrolls to botón del módulo /benefits/insured: <span class='error-color'>ERROR</span>" width="0" />
                 </div>
         </div>
         <div class="swiper-button-prev"></div>
