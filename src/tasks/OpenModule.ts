@@ -5,7 +5,7 @@ import { HomePage } from '../ui/HomePage';
 
 export class OpenModule {
     static called(nombreModulo: string) {
-        Wait.for(Duration.ofSeconds(15));
+        Wait.for(Duration.ofSeconds(55));
         return Task.where(`#open the module ${nombreModulo}`,
             Click.on(HomePage.BUTTON_MODULO(nombreModulo)),
 

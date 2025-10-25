@@ -19,7 +19,7 @@ Feature: registrarAsegurados
     Then el sistema debe mostrar un mensaje de éxito
 
 
-  @registro_familiar_excel
+  @registro_familiar_excel @Regresion
   Scenario: Registrar varios familiares desde Excel
     And el usuario está en el sesion " Mi familia "
     And el usuario carga los familiares desde el archivo "src/data/asegurados.xlsx"
@@ -27,7 +27,7 @@ Feature: registrarAsegurados
     #Then el sistema debe mostrar un mensaje de éxito    
 
 
-@registro_mascota 
+@registro_mascota @Regresion
   Scenario: Registrar una nueva mascota
     And el usuario está en el sesion " Mis mascotas "    
     And el usuario completa el formulario de mascota con los siguientes datos
@@ -37,7 +37,7 @@ Feature: registrarAsegurados
     Then el sistema debe mostrar un mensaje de éxito
 
 
- @registro_mascota_excel
+ @registro_mascota_excel @Regresion
   Scenario: Registrar mascotas desde Excel
     And el usuario está en el sesion " Mis mascotas " 
     When el usuario registra todas las mascotas desde el archivo "src/data/asegurados.xlsx"
