@@ -7,7 +7,7 @@ Feature: registrarAsegurados
   Background:
     Given Cristian opens the application
     When he loads the authentication token and goes to the homepage
-    And el usuario está en el módulo " Gestiona tus asegurados "
+    And el usuario está en el módulo "/benefits/insured"
 
   @registro_familiar @Regresion
   Scenario Outline: Registrar un nuevo familiar
