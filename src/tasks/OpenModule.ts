@@ -5,15 +5,15 @@ import { HomePage } from '../ui/HomePage';
 
 export class OpenModule {
     static called(nombreModulo: string) {
-        Wait.for(Duration.ofSeconds(25));
+        Wait.for(Duration.ofSeconds(20));
         return Task.where(`#open the module ${nombreModulo}`,
-            Wait.until(HomePage.BUTTON_MODULO(nombreModulo), isVisible()),
-            Wait.for(Duration.ofSeconds(10)),
+            //Wait.until(HomePage.BUTTON_MODULO(nombreModulo), isVisible()),
+            //Wait.for(Duration.ofSeconds(10)),
             Click.on(HomePage.BUTTON_MODULO(nombreModulo)),
 
             // Espera opcional para asegurar carga completa
-            Interaction.where(`#wait 10 seconds`, async () => {
-                await new Promise(resolve => setTimeout(resolve, 10000));
+            Interaction.where(`#wait 5 seconds`, async () => {
+                await new Promise(resolve => setTimeout(resolve, 5000));
             }),
             
         );        

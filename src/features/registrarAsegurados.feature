@@ -62,12 +62,12 @@ Feature: registrarAsegurados
     Examples:
       | placa  | modelo | propietario   | tipoVehiculo | marca  | esPropietario | departamento | ciudad      | tipoServicio |
       | OPU896 | 2025   | DAVID ALVAREZ | Automóvil    | TOYOTA | Sí            | Antioquia    | Medellín    | Particular   |
-      | ABX986 | 2020   | DAVID ALVAREZ | Automóvil    | TOYOTA | No            | Antioquia    | Antioquia   | Particular   |
+      | ABX986 | 2020   | DAVID ALVAREZ | Automóvil    | TOYOTA | No            | Antioquia    | Medellín   | Particular   |
 
 
   @registro_vehiculo_excel @Regresion
   Scenario: Registrar vehículo desde Excel
     And el usuario está en el sesion " Mis vehículos "
-    When el usuario registra todas las mascotas desde el archivo "src/data/asegurados.xlsx"
+    When el usuario registra todos los vehículos desde el archivo "src/data/asegurados.xlsx"
 
 
