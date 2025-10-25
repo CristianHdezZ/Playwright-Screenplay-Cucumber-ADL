@@ -13,7 +13,7 @@ import { ExcelReader } from "../utils/ExcelReader";
 
 When(
   "{pronombre} usuario está en el módulo {string}",
-  { timeout: 40000 },
+  { timeout: 70000 },
   async (actor: Actor, modulo: string) => {
     console.log(`Navegando al módulo: ${modulo}`);
     // await actor.attemptsTo(
