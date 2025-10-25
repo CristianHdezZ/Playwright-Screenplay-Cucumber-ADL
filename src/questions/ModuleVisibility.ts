@@ -13,7 +13,7 @@ export class ModuleVisibility {
       `la visibilidad del módulo "${nombreModulo}"`,
       async (actor: AnswersQuestions & UsesAbilities) => {
 
-        Wait.for(Duration.ofSeconds(25));
+        Wait.for(Duration.ofSeconds(5));
 
         // Localizamos el <h1> del módulo dinámicamente
         const moduleTitle = PageElement.located(

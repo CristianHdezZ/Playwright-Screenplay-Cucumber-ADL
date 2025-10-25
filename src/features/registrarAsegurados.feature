@@ -7,7 +7,7 @@ Feature: registrarAsegurados
   Background:
     Given Cristian opens the application
     When he loads the authentication token and goes to the homepage
-    And el usuario está en el módulo "/benefits/insured"
+    And el usuario está en el módulo " Gestiona tus asegurados "
 
   @registro_familiar @Regresion
   Scenario Outline: Registrar un nuevo familiar
@@ -19,8 +19,8 @@ Feature: registrarAsegurados
     Then el sistema debe mostrar un mensaje de éxito
     Examples:
       | primerNombre | segundoNombre | primerApellido | segundoApellido | tipoDocumento        | numeroDocumento | fechaNacimiento | genero    | parentesco | eps    | departamento | ciudad   |
-      | María        | Fernanda      | López          | Rodríguez       | Cédula de ciudadanía | 178965432       | 1985-05-12      | Femenino  | Cónyuge    | Sura   | Antioquia    | Medellín |
-      | Luis         | Alberto       | Martínez       | Sánchez         | Cédula de ciudadanía | 123456789       | 2000-09-30      | Masculino | Hijo(a)    | Mutual | Antioquia    | Medellín |
+      | María        | Fernanda      | López          | Rodríguez       | Cédula de ciudadanía | 178965400       | 1985-05-12      | Femenino  | Cónyuge    | Sura   | Antioquia    | Medellín |
+      | Luis         | Alberto       | Martínez       | Sánchez         | Cédula de ciudadanía | 123456700       | 2000-09-30      | Masculino | Hijo(a)    | Mutual | Antioquia    | Medellín |
 
 
   @registro_familiar_excel @Regresion
@@ -39,9 +39,9 @@ Feature: registrarAsegurados
     And el usuario hace clic en Registrar
     Then el sistema debe mostrar un mensaje de éxito
     Examples:
-      | nombreMascota | tipoMascota | fechaNacimiento | raza   | genero |
-      | Max           | Gato        | 2020-03-15      | Siamés | Macho  |
-  # | Bella         | Perro       | 2019-11-20      | Bulldog Francés    | Hembra |
+      | nombreMascota | tipoMascota | fechaNacimiento | raza            | genero |
+      | Max           | Gato        | 2020-03-15      | Siamés          | Macho  |
+      | Bella         | Perro       | 2019-11-20      | Bulldog Francés | Hembra |
 
 
   @registro_mascota_excel @Regresion
@@ -60,9 +60,9 @@ Feature: registrarAsegurados
     And el usuario hace clic en Registrar
     Then el sistema debe mostrar un mensaje de éxito
     Examples:
-      | placa  | modelo | propietario   | tipoVehiculo | marca  | esPropietario | departamento | ciudad      | tipoServicio |
-      | OPU896 | 2025   | DAVID ALVAREZ | Automóvil    | TOYOTA | Sí            | Antioquia    | Medellín    | Particular   |
-      | ABX986 | 2020   | DAVID ALVAREZ | Automóvil    | TOYOTA | No            | Antioquia    | Medellín   | Particular   |
+      | placa  | modelo | propietario   | tipoVehiculo | marca  | esPropietario | departamento | ciudad   | tipoServicio |
+      | OPU896 | 2025   | DAVID ALVAREZ | Automóvil    | TOYOTA | Sí            | Antioquia    | Medellín | Particular   |
+      | ABX986 | 2020   | DAVID ALVAREZ | Automóvil    | TOYOTA | No            | Antioquia    | Medellín | Particular   |
 
 
   @registro_vehiculo_excel @Regresion
