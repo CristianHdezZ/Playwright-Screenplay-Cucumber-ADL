@@ -16,10 +16,11 @@ When(
   { timeout: 40000 },
   async (actor: Actor, modulo: string) => {
     console.log(`Navegando al módulo: ${modulo}`);
-    await actor.attemptsTo(OpenModule.called(modulo));
     await actor.attemptsTo(
       Ensure.that(ModuleVisibility.of(modulo), equals(true))
     );
+    await actor.attemptsTo(OpenModule.called(modulo));
+    
   }
 );
 

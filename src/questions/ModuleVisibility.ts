@@ -22,7 +22,7 @@ export class ModuleVisibility {
 
         // Desplazamos hasta el elemento y verificamos que esté visible y habilitado
         await actorInTheSpotlight().attemptsTo(
-          //Scroll.to(moduleTitle),
+          Scroll.to(moduleTitle),
           Ensure.that(moduleTitle, isVisible()),
           Ensure.that(moduleTitle, isEnabled())
         );
