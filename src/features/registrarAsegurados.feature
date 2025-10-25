@@ -18,9 +18,9 @@ Feature: registrarAsegurados
     And el usuario hace clic en Registrar
     Then el sistema debe mostrar un mensaje de éxito
     Examples:
-      | primerNombre | segundoNombre | primerApellido | segundoApellido | tipoDocumento        | numeroDocumento | fechaNacimiento | genero    | parentesco | eps         | departamento    | ciudad |
-      | María        | Fernanda      | López          | Rodríguez       | Cédula de ciudadanía | 178965432       | 1985-05-12      | Femenino  | Cónyuge    | Sura eps    | Cundinamarca    | Bogotá |
-      | Luis         | Alberto       | Martínez       | Sánchez         | Cédula de ciudadanía | 123456789       | 2000-09-30      | Masculino | Hijo(a)    | Coomeva eps | Valle del Cauca | Cali   |
+      | primerNombre | segundoNombre | primerApellido | segundoApellido | tipoDocumento        | numeroDocumento | fechaNacimiento | genero    | parentesco | eps         | departamento | ciudad   |
+      | María        | Fernanda      | López          | Rodríguez       | Cédula de ciudadanía | 178965432       | 1985-05-12      | Femenino  | Cónyuge    | Sura eps    | Antioquia    | Medellín |
+      | Luis         | Alberto       | Martínez       | Sánchez         | Cédula de ciudadanía | 123456789       | 2000-09-30      | Masculino | Hijo(a)    | Coomeva eps | Antioquia    | Medellín |
 
 
   @registro_familiar_excel @Regresion
@@ -61,8 +61,8 @@ Feature: registrarAsegurados
     Then el sistema debe mostrar un mensaje de éxito
     Examples:
       | placa  | modelo | propietario | tipoVehiculo | marca  | esPropietario | departamento | ciudad   | tipoServicio |
-      | OPU78F | 2025   | Juan Pérez  | Automóvil    | TOYOTA | Sí            | Antioquia    | Medellín | Particular   |
-      | ABX123 | 2020   | Ana Gómez   | Motocicleta  | HONDA  | No            | Cundinamarca | Bogotá   | Particular   |
+      | OPU896 | 2025   | Juan Pérez  | Automóvil    | TOYOTA | Sí            | Antioquia    | Medellín | Particular   |
+      | ABX986 | 2020   | Ana Gómez   | Automóvil    | TOYOTA | No            | Cundinamarca | Bogotá   | Particular   |
 
 
   @registro_vehiculo_excel @Regresion

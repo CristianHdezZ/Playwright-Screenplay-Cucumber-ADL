@@ -24,8 +24,7 @@ async (actor: Actor, filePath: string) => {
     console.log(`📘 Cargando ${vehiculos.length} vehículos desde ${filePath}`);
 
     for (const data of vehiculos) {
-        console.log("🚗 Registrando vehículo:", data);
-        await actor.attemptsTo(notes().set(`🚗 Registrando vehículo: ${JSON.stringify(data)}`, data));
+        console.log("🚗 Registrando vehículo:", data);       
 
         await actor.attemptsTo(RegistrarVehiculo.withData(data));
 
