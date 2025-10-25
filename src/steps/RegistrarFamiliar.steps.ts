@@ -1,7 +1,7 @@
 import { When, Then } from "@cucumber/cucumber";
-import { Actor, actorInTheSpotlight, Wait, Duration } from "@serenity-js/core";
+import { Actor, actorInTheSpotlight, Wait, Duration, notes } from "@serenity-js/core";
 import { OpenModule } from "../tasks/OpenModule";
-import { Ensure, equals } from "@serenity-js/assertions";
+import { Ensure, equals} from "@serenity-js/assertions";
 import { ModuleVisibility } from "../questions/ModuleVisibility";
 import { RegisterFamiliar } from "../tasks/RegisterFamiliar";
 import { OpenSesion } from "../tasks/OpenSesion";
@@ -55,9 +55,14 @@ When(
   async (actor: Actor, filePath: string) => {
     const dataset = ExcelReader.readExcel("src/data/asegurados.xlsx");
     console.log(`📘 Cargando ${dataset.length} familiares desde ${filePath}`);
+    
+    
 
     for (const data of dataset) {
       console.log("🧍 Registrando asegurado:", data);
+      await actor.attemptsTo(notes().set(`🧍 Registrando asegurado: ${JSON.stringify(data)}`,data));
+      
+      
 
       // 1️⃣ Llenar formulario con datos del familiar
       await actor.attemptsTo(RegisterFamiliar.withData(data));

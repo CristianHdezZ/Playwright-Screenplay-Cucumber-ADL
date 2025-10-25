@@ -13,7 +13,7 @@ export class ModuleVisibility {
       `la visibilidad del módulo "${nombreModulo}"`,
       async (actor: AnswersQuestions & UsesAbilities) => {
 
-        Wait.for(Duration.ofSeconds(15));
+        Wait.for(Duration.ofSeconds(80));
 
         // Localizamos el <h1> del módulo dinámicamente
         const moduleTitle = PageElement.located(
@@ -22,7 +22,7 @@ export class ModuleVisibility {
 
         // Desplazamos hasta el elemento y verificamos que esté visible y habilitado
         await actorInTheSpotlight().attemptsTo(
-          Scroll.to(moduleTitle),
+          //Scroll.to(moduleTitle),
           Ensure.that(moduleTitle, isVisible()),
           Ensure.that(moduleTitle, isEnabled())
         );

@@ -25,13 +25,17 @@ export class ReviewRegistrarFamiliar {
             await actorInTheSpotlight().attemptsTo(
                 Ensure.that(successMessage.text(), equals('¡Los datos fueron guardados con éxito!'))
             ); 
+
+            
+            const isVisibleSuccessMessage = await actor.answer(successMessage.isVisible());
+            console.log('Mensaje de éxito visible:', isVisibleSuccessMessage);
             
              await actorInTheSpotlight().attemptsTo(
                 Scroll.to(RegistrarFamiliarPage.BTN_ACEPTAR),
                 Click.on(RegistrarFamiliarPage.BTN_ACEPTAR)
             );
 
-            return await actor.answer(successMessage.isVisible());
+            return isVisibleSuccessMessage;
         }
     );
 }

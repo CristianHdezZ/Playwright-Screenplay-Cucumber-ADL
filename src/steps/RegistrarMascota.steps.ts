@@ -1,5 +1,5 @@
 import { When } from '@cucumber/cucumber';
-import { Actor, actorInTheSpotlight, Wait, Duration } from "@serenity-js/core";
+import { Actor, actorInTheSpotlight, Wait, Duration, notes } from "@serenity-js/core";
 import { RegistrarMascota } from '../tasks/RegistrarMascota';
 import { MascotaData } from '../models/MascotaData';
 import { ExcelReader } from '../utils/ExcelReader';
@@ -26,6 +26,7 @@ When(
     // 2️⃣ Iterar sobre cada registro
     for (const data of mascotas) {
       console.log("🐶 Registrando mascota:", data);
+      await actor.attemptsTo(notes().set(`🐶 Registrando mascota: ${JSON.stringify(data)}`, data));
 
       // 📝 Completar formulario con datos de la mascota
       await actor.attemptsTo(RegistrarMascota.withData(data));

@@ -11,7 +11,7 @@ export class OpenModule {
 
             // Espera opcional para asegurar carga completa
             Interaction.where(`#wait 5 seconds`, async () => {
-                await new Promise(resolve => setTimeout(resolve, 5000));
+                await new Promise(resolve => setTimeout(resolve, 10000));
             }),
             
         );        

@@ -2,11 +2,12 @@ import { Task, Duration, Wait, Interaction } from '@serenity-js/core';
 import { Enter, Click, Scroll, Select, isVisible } from '@serenity-js/web';
 import { RegistrarFamiliarPage } from '../ui/RegistrarFamiliarPage';
 import { tipoDocumentoMap, generoMap, parentescoMap, epsMap, departamentoMap, ciudadMap } from '../utils/maps';
+import { FamiliarData } from '../models/FamiliarData';
 
 
 export class RegisterFamiliar {
 
-    static withData(data: any) {
+    static withData(data: FamiliarData) {
         console.log('📋 Filling out the familiar registration form with data:');
         console.log(`Primer Nombre: ${data.primerNombre}`);
         console.log(`Segundo Nombre: ${data.segundoNombre}`);
@@ -37,14 +38,7 @@ export class RegisterFamiliar {
             // Departamento → Ciudad
             Select.value(departamentoMap[data.departamento]).from(RegistrarFamiliarPage.DEPARTAMENTO),
             Wait.upTo(Duration.ofSeconds(5)).until(RegistrarFamiliarPage.CIUDAD, isVisible()),
-            Select.value(ciudadMap[data.departamento][data.ciudad]).from(RegistrarFamiliarPage.CIUDAD),
-            
-            //  Click.on(RegistrarFamiliarPage.BTN_REGISTRAR),
-            //  // Espera opcional para asegurar carga completa
-            //  Interaction.where(`#wait 5 seconds`, async () => {
-            //     await new Promise(resolve => setTimeout(resolve, 5000));
-            // }),
-            
+            Select.value(ciudadMap[data.departamento][data.ciudad]).from(RegistrarFamiliarPage.CIUDAD),                
             
         );
 

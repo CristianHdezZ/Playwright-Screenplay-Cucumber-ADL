@@ -6,7 +6,7 @@ import { MascotaData } from '../models/MascotaData';
 
 export class RegistrarMascota {
 
-    static withData(data: any) {
+    static withData(data: MascotaData) {
         console.log('📋 Filling out the pet registration form with data:');
         console.log(`Nombre: ${data.nombreMascota}`);
         console.log(`Tipo: ${data.tipoMascota}`);
