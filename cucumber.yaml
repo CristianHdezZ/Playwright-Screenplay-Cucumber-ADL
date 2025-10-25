@@ -8,5 +8,5 @@ default:
     - ./src/**/*.config.ts
   paths:
     - src/features/**/*.feature
-  tags: "@Regresion"
+  tags: "@registro_vehiculo"
 

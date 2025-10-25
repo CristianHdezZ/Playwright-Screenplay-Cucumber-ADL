@@ -61,8 +61,6 @@ When(
 
     for (const data of dataset) {
       console.log("🧍 Registrando asegurado:", data);
-      await actor.attemptsTo(notes().set(`🧍 Registrando asegurado: ${JSON.stringify(data)}`,data));
-      
       
 
       // 1️⃣ Llenar formulario con datos del familiar

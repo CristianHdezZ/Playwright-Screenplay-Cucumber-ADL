@@ -18,9 +18,9 @@ Feature: registrarAsegurados
     And el usuario hace clic en Registrar
     Then el sistema debe mostrar un mensaje de éxito
     Examples:
-      | primerNombre | segundoNombre | primerApellido | segundoApellido | tipoDocumento        | numeroDocumento | fechaNacimiento | genero    | parentesco | eps         | departamento | ciudad   |
-      | María        | Fernanda      | López          | Rodríguez       | Cédula de ciudadanía | 178965432       | 1985-05-12      | Femenino  | Cónyuge    | Sura eps    | Antioquia    | Medellín |
-      | Luis         | Alberto       | Martínez       | Sánchez         | Cédula de ciudadanía | 123456789       | 2000-09-30      | Masculino | Hijo(a)    | Coomeva eps | Antioquia    | Medellín |
+      | primerNombre | segundoNombre | primerApellido | segundoApellido | tipoDocumento        | numeroDocumento | fechaNacimiento | genero    | parentesco | eps    | departamento | ciudad   |
+      | María        | Fernanda      | López          | Rodríguez       | Cédula de ciudadanía | 178965432       | 1985-05-12      | Femenino  | Cónyuge    | Sura   | Antioquia    | Medellín |
+      | Luis         | Alberto       | Martínez       | Sánchez         | Cédula de ciudadanía | 123456789       | 2000-09-30      | Masculino | Hijo(a)    | Mutual | Antioquia    | Medellín |
 
 
   @registro_familiar_excel @Regresion
@@ -60,9 +60,9 @@ Feature: registrarAsegurados
     And el usuario hace clic en Registrar
     Then el sistema debe mostrar un mensaje de éxito
     Examples:
-      | placa  | modelo | propietario | tipoVehiculo | marca  | esPropietario | departamento | ciudad   | tipoServicio |
-      | OPU896 | 2025   | Juan Pérez  | Automóvil    | TOYOTA | Sí            | Antioquia    | Medellín | Particular   |
-      | ABX986 | 2020   | Ana Gómez   | Automóvil    | TOYOTA | No            | Cundinamarca | Bogotá   | Particular   |
+      | placa  | modelo | propietario   | tipoVehiculo | marca  | esPropietario | departamento | ciudad      | tipoServicio |
+      | OPU896 | 2025   | DAVID ALVAREZ | Automóvil    | TOYOTA | Sí            | Antioquia    | Medellín    | Particular   |
+      | ABX986 | 2020   | DAVID ALVAREZ | Automóvil    | TOYOTA | No            | Antioquia    | Antioquia   | Particular   |
 
 
   @registro_vehiculo_excel @Regresion
