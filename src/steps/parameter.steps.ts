@@ -18,7 +18,7 @@ defineParameterType({
 });
 
 defineParameterType({
-    regexp: /el|ella/,
+    regexp: /el|ella|la/,
     transformer() {
         return actorInTheSpotlight();
     },

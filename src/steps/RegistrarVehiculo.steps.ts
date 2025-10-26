@@ -1,5 +1,5 @@
 import { When } from '@cucumber/cucumber';
-import { Actor, actorInTheSpotlight, Wait, Duration, notes } from '@serenity-js/core';
+import { Actor, actorInTheSpotlight, Wait, Duration } from '@serenity-js/core';
 import { RegistrarVehiculo } from '../tasks/RegistrarVehiculo';
 import { VehiculoData } from '../models/VehiculoData';
 import { ExcelReader } from '../utils/ExcelReader';
