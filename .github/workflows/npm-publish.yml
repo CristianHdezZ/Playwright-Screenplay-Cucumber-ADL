@@ -35,10 +35,8 @@ jobs:
 
       - name: 🧪 Run tests and generate Serenity JSON
         env:
-          AT: ${{ secrets.AT }}  
+          AT: ${{ secrets.AT }}        
         run: >
-          echo "Ejecutando pruebas con token..."
-          echo "Token parcial: ${AT:0:10}..."
           npx cucumber-js
           --require-module ts-node/register
           --require src/support/serenity.config.ts
