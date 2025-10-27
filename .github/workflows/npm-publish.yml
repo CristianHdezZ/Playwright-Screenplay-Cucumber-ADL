@@ -35,8 +35,7 @@ jobs:
 
       - name: 🧪 Run tests and generate Serenity JSON
         env:
-          AT: ${{ secrets.AT }}
-          echo: ${{ secrets.echo }}        
+          AT: ${{ secrets.AT }}                 
         run: >
           npx cucumber-js
           --require-module ts-node/register
