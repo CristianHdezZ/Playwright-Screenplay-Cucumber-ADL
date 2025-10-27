@@ -15,6 +15,7 @@ jobs:
   test:
     name: "🧪 Pruebas (Run Tests)"
     runs-on: ubuntu-latest
+    environment: tokenADl   # <--- Aquí se indica el environment
     steps:
       - name: 🧩 Checkout code
         uses: actions/checkout@v4
@@ -36,7 +37,8 @@ jobs:
       - name: 🧪 Run tests and generate Serenity JSON
         env:
           AT: ${{ secrets.AT }}                 
-        run: >
+        run: |
+          echo "El valor del secret AT es: $AT"          
           npx cucumber-js
           --require-module ts-node/register
           --require src/support/serenity.config.ts
