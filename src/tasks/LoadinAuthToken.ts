@@ -12,7 +12,7 @@ export class LoadinAuthToken {
                 const serenityPage = await BrowseTheWebWithPlaywright.as(actor).currentPage();
                 const page: PWPage = (serenityPage as any).page; // 🔹 casteo seguro a la página nativa
 
-                console.log('🔑 Setting authentication tokens in LocalStorage',process.env.AT);
+                console.log('🔑 Setting authentication tokens in LocalStorage: ',process.env.AT);
 
                 const localStorageVars = {
                     RT: process.env.RT || '',
