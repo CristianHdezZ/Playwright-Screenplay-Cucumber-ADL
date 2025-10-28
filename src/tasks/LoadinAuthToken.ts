@@ -11,8 +11,12 @@ export class LoadinAuthToken {
                 // Obtenemos la página nativa de Playwright
                 const serenityPage = await BrowseTheWebWithPlaywright.as(actor).currentPage();
                 const page: PWPage = (serenityPage as any).page; // 🔹 casteo seguro a la página nativa
-
-                console.log('🔑 Setting authentication tokens in LocalStorage: ',process.env.AT);
+                
+                if (process.env.AT) {
+                    console.log('🔑 Setting authentication tokens in LocalStorage'); // ✅ Solo confirma que está definido
+                } else {
+                    console.error('❌ Token no definido');
+                }
 
                 const localStorageVars = {
                     RT: process.env.RT || '',

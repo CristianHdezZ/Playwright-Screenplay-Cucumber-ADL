@@ -1,5 +1,5 @@
 import { When, Then } from "@cucumber/cucumber";
-import { Actor, actorInTheSpotlight, Wait, Duration, notes } from "@serenity-js/core";
+import { Actor, actorInTheSpotlight, Wait, Duration } from "@serenity-js/core";
 import { OpenModule } from "../tasks/OpenModule";
 import { Ensure, equals} from "@serenity-js/assertions";
 import { ModuleVisibility } from "../questions/ModuleVisibility";
@@ -25,7 +25,7 @@ When(
 );
 
 When(
-  "{pronombre} usuario está en el sesion {string}",
+  "{pronombre} usuario está en la sesion {string}",
   { timeout: 40000 },
   async (actor: Actor, session: string) => {
     console.log(`Navegando al módulo: ${session}`);

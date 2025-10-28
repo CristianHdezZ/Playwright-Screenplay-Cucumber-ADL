@@ -75,4 +75,22 @@ export class RegistrarFamiliarPage {
     static readonly MSG_EXITO = PageElement.located(
         By.xpath("//div[contains(@class,'text-center')]/h5[contains(text(),'¡Los datos fueron guardados con éxito!')]")
     ).describedAs('mensaje de éxito "¡Los datos fueron guardados con éxito!"');
+
+
+     // --- Tabla de familiares ---
+    static readonly LISTA_FAMILIARES = PageElement.located(By.css('tbody tr'))
+        .describedAs('Lista de familiares');
+
+    static BTN_EDITAR(numeroDocumento: string){
+        return PageElement.located(By.xpath(`(*//td[contains(.,"${numeroDocumento}")]/..//div/button/img[@alt="edit"])[1]`))
+        .describedAs(`botón editar familiar con documento ${numeroDocumento}`);
+    }       
+
+    static readonly BTN_ACTUALIZAR = PageElement.located(By.xpath('*//button[@class="btn-form-aval"]//span[contains(text(),"Actualizar")]'))
+    .describedAs('Botón actualizar familiar');
+
+  // --- Mensaje de éxito ---
+  static readonly MENSAJE_EXITO = PageElement.located(
+    By.xpath("//div[contains(@class,'text-center')]/h5[contains(text(),'¡Los datos fueron actualizados con éxito!')]")
+    ).describedAs('Mensaje de éxito al actualizar');    
 }

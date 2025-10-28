@@ -51,4 +51,22 @@ export class VerificarTarifasPage {
     static readonly BTN_ACEPTAR_MODAL = PageElement.located(
         By.xpath(`//app-modals//button[contains(.,'Aceptar')]`)
     ).describedAs('botón Aceptar del modal de confirmación');
+
+
+    static readonly BTN_ADD_BENEFICIARIO = PageElement.located(
+        By.xpath('(*//button[@class="btn btn-lg btn-outline-primary rounded-pill w-100"])[1]')
+    ).describedAs('botón Agregar beneficiario');
+
+
+    static SELECT_METODO_PAGO_FAMILIAR(nombre: string) {
+        return PageElement.located(
+            By.xpath(`(*//td[contains(text(),"${nombre}")])[1]/..//select[@title="Seleccione un método de pago"]`)
+        ).describedAs(`opción del método de pago para el familiar ${nombre}`);
+    }
+
+    static CHECKBOX_SELECT_BENEFITS_FAMILIAR(nombre: string){
+        return PageElement.located(
+        By.xpath(`(*//td[contains(text(),"${nombre}")])[1]/../td/input[@title="Seleccionar beneficio"]`)
+    ).describedAs('checkbox para seleccionar beneficios del familiar');
+    } 
 }

@@ -1,7 +1,7 @@
 import { Task, Interaction } from "@serenity-js/core";
 import axios from "axios";
 
-export class ActualizarColaborador {
+export class ActualizarColaboradorApi {
   static withData(id: string, birthDate: string, eps: string) {
     const token = process.env.AT || "";
     const idCompany = process.env.ID_COMPANY || "";

@@ -3,10 +3,10 @@ name: Run Tests - SerenityJS Report
 on:
   push:
     branches:
-      - main
+      - mainqa
   pull_request:
     branches:
-      - main
+      - mainqa
 
 env:
   REPORT_DIR: "./target/site/serenity"

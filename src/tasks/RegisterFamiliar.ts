@@ -1,4 +1,4 @@
-import { Task, Duration, Wait, Interaction } from '@serenity-js/core';
+import { Task, Duration, Wait } from '@serenity-js/core';
 import { Enter, Click, Scroll, Select, isVisible } from '@serenity-js/web';
 import { RegistrarFamiliarPage } from '../ui/RegistrarFamiliarPage';
 import { tipoDocumentoMap, generoMap, parentescoMap, epsMap, departamentoMap, ciudadMap } from '../utils/maps';

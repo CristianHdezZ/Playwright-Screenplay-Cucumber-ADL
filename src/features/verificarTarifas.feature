@@ -83,4 +83,15 @@ Feature: Verificar tarifas de productos para colaborador
       | Salud    | Medicinas prepagadas | Colmédica  | Zafiro      | Bolsa      | 1183226 | 5  | 1960-01-27T00:00:00.000Z | 15  | Plena       |
       | Salud    | Medicinas prepagadas | Colmédica  | Zafiro      | Bolsa      | 391470  | 5  | 1990-01-27T00:00:00.000Z | 1   | Simulteidad |
       | Salud    | Medicinas prepagadas | Colmédica  | Zafiro      | Bolsa      | 1134883 | 5  | 1960-01-27T00:00:00.000Z | 1   | Simulteidad |
-      | Salud    | Medicinas prepagadas | Emermédica  | Emermédica      | Bolsa      | 44065 | 5  | 1960-01-27T00:00:00.000Z | 1   | Simulteidad |
+      | Salud    | Medicinas prepagadas | Emermédica | Emermédica  | Bolsa      | 44065   | 5  | 1960-01-27T00:00:00.000Z | 1   | Simulteidad |
+
+  @Verificar_Tarifas_Productos_Familiar
+  Scenario Outline: Verificar tarifas de productos para Familiar
+    And el colaborador actualiza la fecha de nacimiento del familiar con "<Id>", "<birthDate>" y "<eps>"
+    And el selecciona el "<servicio>", "<categoria>" y selecciona la "<entidad>"
+    And el colaborador activa el beneficio "<producto>", "<metodoPago>" para el familiar "<nombreFamiliar>"
+    Then la plataforma muestra el "<producto>" disponible y la respectiva "<tarifa>" del producto
+
+    Examples:
+      | servicio | categoria        | entidad | producto | metodoPago | tarifa | Id   | birthDate                | eps | condicion | nombreFamiliar |
+      | Salud    | Pólizas de salud | Sura    | Global   | Bolsa      | 322560 | 2797 | 2007-05-05T00:00:00.000Z | 13  | Plena     | Ana López      |
