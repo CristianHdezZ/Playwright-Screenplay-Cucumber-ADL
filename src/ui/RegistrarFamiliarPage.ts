@@ -65,7 +65,7 @@ export class RegistrarFamiliarPage {
     ).describedAs('botón Registrar');
 
     static readonly BTN_REGRESAR = PageElement.located(
-        By.xpath("//button[text()='Regresar']")
+        By.xpath("*//button[text()=' Regresar ']")
     ).describedAs('botón Regresar');
 
     static readonly BTN_ACEPTAR = PageElement.located(
@@ -92,5 +92,36 @@ export class RegistrarFamiliarPage {
   // --- Mensaje de éxito ---
   static readonly MENSAJE_EXITO = PageElement.located(
     By.xpath("//div[contains(@class,'text-center')]/h5[contains(text(),'¡Los datos fueron actualizados con éxito!')]")
-    ).describedAs('Mensaje de éxito al actualizar');    
+    ).describedAs('Mensaje de éxito al actualizar'); 
+    
+    
+    /** Botón para cancelar beneficio del familiar */
+    static readonly BTN_CANCELAR_FAMILIAR = PageElement.located(
+        By.css('.text-center > .row > :nth-child(1) > .btn')
+    ).describedAs('botón cancelar beneficio familiar');
+
+    // /** Botón para regresar al listado */
+    // static readonly BTN_REGRESAR = PageElement.located(
+    //     By.css('.col-6 > .btn')
+    // ).describedAs('botón regresar');
+
+    /** Botón para eliminar beneficio del colaborador */
+    static readonly BTN_ELIMINAR_BENEFICIO_COLABORADOR = PageElement.located(
+        By.css('.btn > span')
+    ).describedAs('botón eliminar beneficio colaborador');
+
+    /** Botón aceptar eliminación de beneficio */
+    static readonly BTN_ACEPTAR_ELIMINAR_BENEFICIO = PageElement.located(
+        By.css('.text-center > .row > :nth-child(2) > .btn')
+    ).describedAs('botón aceptar eliminar beneficio');
+
+    /** Botón aceptar confirmación final de eliminación */
+    static readonly BTN_ACEPTAR_ELIMINACION_FINAL = PageElement.located(
+        By.css('.col-md-12 > .btn')
+    ).describedAs('botón aceptar eliminación final');
+
+    /** Botón añadir beneficio familiar (si se requiere reutilizar más adelante) */
+    static readonly BTN_ADD_BENEFICIO_FAMILIAR = PageElement.located(
+        By.css('.row > :nth-child(2) > .btn')
+    ).describedAs('botón añadir beneficio familiar');
 }

@@ -69,4 +69,13 @@ export class VerificarTarifasPage {
         By.xpath(`(*//td[contains(text(),"${nombre}")])[1]/../td/input[@title="Seleccionar beneficio"]`)
     ).describedAs('checkbox para seleccionar beneficios del familiar');
     } 
+
+    static readonly BTN_CONFIRMAR_BENEFICIO = PageElement.located(
+        By.xpath(`//app-modals//button[contains(.,'Aceptar')]`)
+    ).describedAs('botón Confirmar beneficio');    
+
+    static readonly BTN_FINALIZAR_ACTIVACION = PageElement.located(
+        By.xpath(`*//button[@class="btn btn-primary"]`)
+    ).describedAs('botón Finalizar compra');
+
 }
