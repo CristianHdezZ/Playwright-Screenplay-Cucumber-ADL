@@ -48,7 +48,8 @@ Before(async function () {
     this.page = page;
 
     // Variables del entorno
-    const apiUrl = 'https://benefits-dev-api.migrupoesaval.com';
+    //const apiUrl = 'https://benefits-dev-api.migrupoesaval.com';
+    const apiUrl = 'https://benefits-api.migrupoesaval.com';
     const token = process.env.AT || '';
 
     // Configurar actor con habilidades tanto de front (Playwright) como de API (CallAnApi)
