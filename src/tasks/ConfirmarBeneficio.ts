@@ -17,4 +17,16 @@ export class ConfirmarBeneficio {
 
     );
   }
+
+  static forFamily() {
+    return Task.where(
+      "#actor confirma el beneficio familiar seleccionado",
+      Wait.for(Duration.ofSeconds(2)),
+      Scroll.to(VerificarTarifasPage.BTN_CONFIRMAR_BENEFICIO),
+      Click.on(VerificarTarifasPage.BTN_CONFIRMAR_BENEFICIO),
+      Wait.for(Duration.ofSeconds(5)),
+      Click.on(VerificarTarifasPage.BTN_FINALIZAR_ACTIVACION),
+      Wait.for(Duration.ofSeconds(3))
+    );
+  }
 }

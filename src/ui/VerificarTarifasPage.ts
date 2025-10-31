@@ -78,4 +78,8 @@ export class VerificarTarifasPage {
         By.xpath(`*//button[@class="btn btn-primary"]`)
     ).describedAs('botón Finalizar compra');
 
+    static readonly BTN_ELIMINAR_BENEFICIO = PageElement.located(
+        By.xpath(`*//button[@class="btn btn-lg btn-primary rounded-pill w-100"]`)
+    ).describedAs('botón Eliminar beneficio');
+
 }
