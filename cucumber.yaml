@@ -8,5 +8,5 @@ default:
     - ./src/**/*.config.ts
   paths:
     - src/features/**/*.feature
-  tags: "@Verificar_Delete_Medisanitas"
+  tags: "@RegressionPND"
 

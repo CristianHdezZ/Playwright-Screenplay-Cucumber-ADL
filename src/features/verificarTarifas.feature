@@ -239,7 +239,7 @@ Feature: Verificar tarifas de productos para colaborador
     Then la respuesta del API debe ser exitosamente para la actualización del familiar con "<idFamiliar>"
     When el selecciona el "<servicio>", "<categoria>" y selecciona la "<entidad>"
     And el colaborador desactiva el beneficio "<producto>", "<metodoPago>"
-    And el colaborador desactiva el beneficio "<producto>", "<metodoPago>" para el familiar "<nombreFamiliar>"    
+    And el colaborador desactiva el beneficio "<producto>", "<metodoPago>" para el familiar "<nombreFamiliar>"++    
     Then la plataforma muestra el "<producto>" disponible y la respectiva "<tarifa>" del producto
     When el colaborador confirma afiliación familiar
 
