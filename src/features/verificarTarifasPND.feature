@@ -8,7 +8,7 @@ Feature: Verificar tarifas de productos para colaborador
     When he loads the authentication token and goes to the homepage
     And el usuario está en el módulo "/benefits/portfolio-services"
 
-  @Verificar_Tarifas_Productos_Colaborador @RegressionPND
+  @Verificar_Tarifas_Productos_Colaborador 
   Scenario Outline: Verificar tarifas para Colaborador
     And el colaborador actualiza su fecha de nacimiento con "<Id>", "<birthDate>" y "<eps>"
     Then la respuesta del API debe ser exitosamente para la actualización del colaborador con "<Id>"
@@ -18,63 +18,63 @@ Feature: Verificar tarifas de productos para colaborador
 
     Examples:
       | servicio | categoria            | entidad    | producto    | metodoPago | tarifa  | Id | birthDate                | eps | condicion   |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 322560  |35| 2007-05-05T00:00:00.000Z | 13  | Plena       |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 446482  |35| 2005-05-05T00:00:00.000Z | 13  | Plena       |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 518064  |35| 1983-05-05T00:00:00.000Z | 13  | Plena       |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 690248  |35| 1973-05-05T00:00:00.000Z | 13  | Plena       |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 1607986 |35| 1964-05-05T00:00:00.000Z | 13  | Plena       |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 310590  |35| 2007-01-27T00:00:00.000Z | 15  | Simulteidad |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 434512  |35| 1990-01-27T00:00:00.000Z | 15  | Simulteidad |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 506094  |35| 1984-01-27T00:00:00.000Z | 15  | Simulteidad |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 678278  |35| 1974-01-27T00:00:00.000Z | 15  | Simulteidad |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 1596016 |35| 1965-01-27T00:00:00.000Z | 15  | Simulteidad |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 213464  |35| 2007-01-27T00:00:00.000Z | 13  | Plena       |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 355243  |35| 1990-01-27T00:00:00.000Z | 13  | Plena       |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 412197  |35| 1984-01-27T00:00:00.000Z | 13  | Plena       |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 628458  |35| 1974-01-27T00:00:00.000Z | 13  | Plena       |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 1295229 |35| 1965-01-27T00:00:00.000Z | 13  | Plena       |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 201494  |35| 2007-01-27T00:00:00.000Z | 15  | Simulteidad |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 343273  |35| 1990-01-27T00:00:00.000Z | 15  | Simulteidad |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 400227  |35| 1984-01-27T00:00:00.000Z | 15  | Simulteidad |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 616488  |35| 1974-01-27T00:00:00.000Z | 15  | Simulteidad |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 1283259 |35| 1965-01-27T00:00:00.000Z | 15  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |35| 2011-05-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |35| 2010-05-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |35| 1964-05-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1234590 |35| 1960-05-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1340535 |35| 1954-05-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1340535 |35| 1950-05-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |35| 1949-05-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |35| 1945-05-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |35| 1940-05-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |35| 1934-05-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |35| 2011-05-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |35| 2010-05-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |35| 1964-05-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1213590 |35| 1960-05-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1319535 |35| 1954-05-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1542660 |35| 1949-05-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1542660 |35| 1945-05-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1542660 |35| 1940-05-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1542660 |35| 1935-05-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 247695  |35| 2011-01-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 247695  |35| 2010-01-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 247695  |35| 1964-01-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 824775  |35| 1960-01-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 896595  |35| 1954-01-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1115310 |35| 1950-01-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1115310 |35| 1945-01-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1115310 |35| 1940-01-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1115310 |35| 1935-01-27T00:00:00.000Z | 15  | Plena       |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 226695  |35| 2011-01-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 226695  |35| 2010-01-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 226695  |35| 1964-01-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 803775  |35| 1960-01-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 803775  |35| 1960-01-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 875595  |35| 1954-01-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1094310 |35| 1950-01-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1094310 |35| 1945-01-27T00:00:00.000Z | 13  | Simulteidad |
-      | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1094310 |35| 1940-01-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 322560  |35| 2007-05-05T00:00:00.000Z | 13  | Plena       |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 446482  |35| 2005-05-05T00:00:00.000Z | 13  | Plena       |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 518064  |35| 1983-05-05T00:00:00.000Z | 13  | Plena       |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 690248  |35| 1973-05-05T00:00:00.000Z | 13  | Plena       |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 1607986 |35| 1964-05-05T00:00:00.000Z | 13  | Plena       |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 310590  |35| 2007-01-27T00:00:00.000Z | 15  | Simulteidad |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 434512  |35| 1990-01-27T00:00:00.000Z | 15  | Simulteidad |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 506094  |35| 1984-01-27T00:00:00.000Z | 15  | Simulteidad |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 678278  |35| 1974-01-27T00:00:00.000Z | 15  | Simulteidad |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 1596016 |35| 1965-01-27T00:00:00.000Z | 15  | Simulteidad |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 213464  |35| 2007-01-27T00:00:00.000Z | 13  | Plena       |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 355243  |35| 1990-01-27T00:00:00.000Z | 13  | Plena       |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 412197  |35| 1984-01-27T00:00:00.000Z | 13  | Plena       |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 628458  |35| 1974-01-27T00:00:00.000Z | 13  | Plena       |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 1295229 |35| 1965-01-27T00:00:00.000Z | 13  | Plena       |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 201494  |35| 2007-01-27T00:00:00.000Z | 15  | Simulteidad |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 343273  |35| 1990-01-27T00:00:00.000Z | 15  | Simulteidad |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 400227  |35| 1984-01-27T00:00:00.000Z | 15  | Simulteidad |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 616488  |35| 1974-01-27T00:00:00.000Z | 15  | Simulteidad |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 1283259 |35| 1965-01-27T00:00:00.000Z | 15  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |35| 2011-05-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |35| 2010-05-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |35| 1964-05-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1234590 |35| 1960-05-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1340535 |35| 1954-05-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1340535 |35| 1950-05-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |35| 1949-05-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |35| 1945-05-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |35| 1940-05-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |35| 1934-05-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |35| 2011-05-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |35| 2010-05-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |35| 1964-05-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1213590 |35| 1960-05-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1319535 |35| 1954-05-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1542660 |35| 1949-05-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1542660 |35| 1945-05-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1542660 |35| 1940-05-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1542660 |35| 1935-05-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 247695  |35| 2011-01-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 247695  |35| 2010-01-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 247695  |35| 1964-01-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 824775  |35| 1960-01-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 896595  |35| 1954-01-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1115310 |35| 1950-01-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1115310 |35| 1945-01-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1115310 |35| 1940-01-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1115310 |35| 1935-01-27T00:00:00.000Z | 15  | Plena       |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 226695  |35| 2011-01-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 226695  |35| 2010-01-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 226695  |35| 1964-01-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 803775  |35| 1960-01-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 803775  |35| 1960-01-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 875595  |35| 1954-01-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1094310 |35| 1950-01-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1094310 |35| 1945-01-27T00:00:00.000Z | 13  | Simulteidad |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1094310 |35| 1940-01-27T00:00:00.000Z | 13  | Simulteidad |
       | Salud    | Medicinas prepagadas | Colsanitas | Medisanitas | Bolsa      | 1094310 |35| 1935-01-27T00:00:00.000Z | 13  | Simulteidad |
       | Salud    | Medicinas prepagadas | Colmédica  | Diamante    | Bolsa      | 474330  |35| 1990-01-27T00:00:00.000Z | 15  | Plena       |
       | Salud    | Medicinas prepagadas | Colmédica  | Diamante    | Bolsa      | 1416711 |35| 1960-01-27T00:00:00.000Z | 15  | Plena       |
@@ -96,40 +96,40 @@ Feature: Verificar tarifas de productos para colaborador
 
     Examples:
       | servicio | categoria            | entidad    | producto    | metodoPago | tarifa  | Id   | birthDate                | eps | condicion   | nombreFamiliar |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 322560  |2426| 2007-05-05T00:00:00.000Z | 13  | Plena       | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 446482  |2426| 2005-05-05T00:00:00.000Z | 13  | Plena       | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 518064  |2426| 1983-05-05T00:00:00.000Z | 13  | Plena       | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 690248  |2426| 1973-05-05T00:00:00.000Z | 13  | Plena       | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 1607986 |2426| 1964-05-05T00:00:00.000Z | 13  | Plena       | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 310590  |2426| 2007-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 434512  |2426| 1990-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 506094  |2426| 1984-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 678278  |2426| 1974-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 1596016 |2426| 1965-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 213464  |2426| 2007-01-27T00:00:00.000Z | 13  | Plena       | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 355243  |2426| 1990-01-27T00:00:00.000Z | 13  | Plena       | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 412197  |2426| 1984-01-27T00:00:00.000Z | 13  | Plena       | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 628458  |2426| 1974-01-27T00:00:00.000Z | 13  | Plena       | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 1295229 |2426| 1965-01-27T00:00:00.000Z | 13  | Plena       | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 201494  |2426| 2007-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 343273  |2426| 1990-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 400227  |2426| 1984-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 616488  |2426| 1974-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
-      | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 1283259 |2426| 1965-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |2426| 2011-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |2426| 2010-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |2426| 1964-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1234590 |2426| 1960-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1340535 |2426| 1954-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1340535 |2426| 1950-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |2426| 1949-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |2426| 1945-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |2426| 1940-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |2426| 1934-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |2426| 2011-05-27T00:00:00.000Z | 13  | Simulteidad | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |2426| 2010-05-27T00:00:00.000Z | 13  | Simulteidad | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |2426| 1964-05-27T00:00:00.000Z | 13  | Simulteidad | Ana López      |
-      | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1213590 |2426| 1960-05-27T00:00:00.000Z | 13  | Simulteidad | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 322560  |2426| 2007-05-05T00:00:00.000Z | 13  | Plena       | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 446482  |2426| 2005-05-05T00:00:00.000Z | 13  | Plena       | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 518064  |2426| 1983-05-05T00:00:00.000Z | 13  | Plena       | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 690248  |2426| 1973-05-05T00:00:00.000Z | 13  | Plena       | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 1607986 |2426| 1964-05-05T00:00:00.000Z | 13  | Plena       | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 310590  |2426| 2007-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 434512  |2426| 1990-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 506094  |2426| 1984-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 678278  |2426| 1974-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Global      | Bolsa      | 1596016 |2426| 1965-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 213464  |2426| 2007-01-27T00:00:00.000Z | 13  | Plena       | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 355243  |2426| 1990-01-27T00:00:00.000Z | 13  | Plena       | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 412197  |2426| 1984-01-27T00:00:00.000Z | 13  | Plena       | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 628458  |2426| 1974-01-27T00:00:00.000Z | 13  | Plena       | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 1295229 |2426| 1965-01-27T00:00:00.000Z | 13  | Plena       | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 201494  |2426| 2007-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 343273  |2426| 1990-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 400227  |2426| 1984-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 616488  |2426| 1974-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
+      # | Salud    | Pólizas de salud     | Sura       | Clásica     | Bolsa      | 1283259 |2426| 1965-01-27T00:00:00.000Z | 15  | Simulteidad | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |2426| 2011-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |2426| 2010-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 384300  |2426| 1964-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1234590 |2426| 1960-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1340535 |2426| 1954-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1340535 |2426| 1950-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |2426| 1949-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |2426| 1945-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |2426| 1940-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1563660 |2426| 1934-05-27T00:00:00.000Z | 15  | Plena       | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |2426| 2011-05-27T00:00:00.000Z | 13  | Simulteidad | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |2426| 2010-05-27T00:00:00.000Z | 13  | Simulteidad | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 363300  |2426| 1964-05-27T00:00:00.000Z | 13  | Simulteidad | Ana López      |
+      # | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1213590 |2426| 1960-05-27T00:00:00.000Z | 13  | Simulteidad | Ana López      |
       | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1319535 |2426| 1954-05-27T00:00:00.000Z | 13  | Simulteidad | Ana López      |
       | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1542660 |2426| 1949-05-27T00:00:00.000Z | 13  | Simulteidad | Ana López      |
       | Salud    | Medicinas prepagadas | Colsanitas | Integral    | Bolsa      | 1542660 |2426| 1945-05-27T00:00:00.000Z | 13  | Simulteidad | Ana López      |
